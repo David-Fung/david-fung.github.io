@@ -1,0 +1,39 @@
+/*Navigation Bar*/
+.container {width:98%}
+header {background-color:#262626;}
+.logo {float:left; height:35px; width:250px; margin-left:25px; margin-top:8px;}
+nav{float:right;}
+header::after{content:""; display:table; clear:both;}
+nav ul{list-style:none;}
+nav li {display: inline-block;}
+nav a {margin-left:30px; font-size:20px; text-decoration:none; font-weight: 800; color:white;} 
+nav a:hover{color:#666666;}
+
+body{margin:0; background-color:#FFFFFF; background-attachment:fixed;}
+
+/*Slideshow From index.html*/
+.slideshow {height:550px; width:1200px; display:block; margin:auto; border-radius:5px}
+.sectiontitle {font-family:Lucida Sans; color:#262626; text-align:center;}
+.textformat{font-family:Lucida Sans; color:#262626; font-size:25px; text-align:center;}
+
+/*membership.html*/
+.tablesize{margin:0 auto; height:250px; width:250px;}
+img.offerimage{height:400px; width:600px; border-radius:5px}
+td.benefits{vertical-align:top}
+
+img.cardsize {height:240px; width:336px;}
+h1.goldsub {font-family:Lucida Sans; color:#E8C560; text-align:center;}
+h1.silversub {font-family:Lucida Sans; color:#A6A6A7; text-align:center;}
+h1.bronzesub {font-family:Lucida Sans; color:#E4BB8D; text-align:center;}
+span.subdetail {font-family:Lucida Sans; color:#262626; font-size:20px;}
+
+.orderinfo {font-family:Lucida Sans; color:#262626; font-size:25px; font-weight:bold;}
+.submittext {width: 300px; height: 30px; font-size:20px; border-radius: 10px;}
+.subscriptionplan {width:308px; font-size:20px; border-radius:10px;}
+.ordertablesize {margin: 0 auto;}
+.submitorder {background-color: #262626; border: none; padding: 15px 30px; color: white; font-size: 25px; margin-top:30px; border-radius:10px;}
+
+/*location.html*/
+.locationtitle {font-family:Lucida Sans; color:#262626;}
+.locationtext {font-size:25px; font-family:Lucida Sans; color:#262626;}
+.locationtable {margin:auto; cellspacing = "10" width = "500" height = "500}

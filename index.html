@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dream Fitness | Home</title>
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<header>
+	<div class = "container">
+    	<a href = "index.html" target = "_self"><img src = "Images/logo.png" class = "logo"></a>
+		<nav>
+			<ul>
+				<li><a href = "index.html" target = "_self">Home</a></li>
+				<li><a href = "membership.html" target = "_self">Membership</a></li>
+				<li><a href = "location.html">Contact & Location</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<br/>
+<img name = "slide" class = "slideshow">
+<script>
+var i = 0; 		// Position of the starting image
+var images = [];	// Array of images
+var time = 2000;	// 2000 milliseconds between images
+// Populating the images array
+images[0] = "Images/treadmill.jpg";
+images[1] = "Images/weightmachine.jpg";
+images[2] = "Images/pool.jpg";
+images[3] = "Images/personaltrainer.jpg";
+images[4] = "Images/yoga.jpg";
+images[5] = "Images/boxing.jpg";
+// Function to change image
+function changeImage()
+{
+	// The images array and position i is assigned to 'slide' then displayed onto the document.
+	document.slide.src = images[i];
+	// If i is less than 5 (number of image), increase i by 1, else set i back to 0.
+	i < 5 ? i++ : i = 0;
+	// setTimeout() function executes changeImage() function every 2000 milliseconds (time).
+	setTimeout("changeImage()", time);
+}
+//Load changeImage() function upon opening of the window
+window.onload=changeImage();
+</script>
+<br/>
+<h1 class = "sectiontitle">About Us</h1>
+<p class = "textformat"> Dream Fitness are fitness center chains located throughout New York City.<br/>Our goal is to promote good health by encouraging everyone to exercise at our gym.<br/>We offer high quality equipments, fitness courses, and one-to-one personal trainer service.</p>
+<br/>
+<h1 class = "sectiontitle">What We Offer</h1>
+<br/>
+<table class = "tablesize">
+	<tr>
+		<td><img src = "Images/machine.jpg" class = "offerimage"></td>
+		<td><h1 class = "sectiontitle">The Finest Equipment</h1><p class = "textformat">Dream Fitness offers the finest gym equipments for the finest results. We offer a variety of equipments for cardiovascular workouts and weight training workouts.</p></td>
+	</tr>
+	<tr>
+		<td><h1 class = "sectiontitle">Personal Trainer</h1><p class = "textformat">Our personal training program offers a one-to-one personal trainer who will motivate you, monitor your changes, and provide accurate feedback for optimal improvement. Our professional trainers are specialized in exercise physiology and nutrition.</p></td>
+		<td><img src = "Images/personaltrainer2.jpg" class = "offerimage"></td>
+	</tr>
+	<tr>
+		<td><img src = "Images/yoga2.jpg" class = "offerimage"></th>
+		<td><h1 class = "sectiontitle">Fitness Programs</h1><p class = "textformat">If you are looking to relax your mind, perform less intensive exercises, or to increase your overall flexibility, our yoga program is for you! We also offer boxing and swimming programs for those interested in highly intense cardio exercises.</p></td>
+	</tr>
+</table>
+<br/>
+</body>
+</html>

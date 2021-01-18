@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dream Fitness | Membership</title>
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<header>
+	<div class = "container">
+    	<a href = "index.html" target = "_self"><img src = "Images/logo.png" class = "logo"></a>
+		<nav>
+			<ul>
+				<li><a href = "index.html" target = "_self">Home</a></li>
+				<li><a href = "membership.html" target = "_self">Membership</a></li>
+				<li><a href = "location.html">Contact & Location</a></li>
+			</ul>
+		</nav>
+	</div>
+<script>
+function validation()
+{
+	if (document.form.fname.value == '' || document.form.fname.value.length > 20)
+	{
+		alert ("Invalid first name.");
+		return false;
+	}
+	if (document.form.lname.value == '' || document.form.fname.value.length > 20)
+	{
+		alert ("Invalid last name.");
+		return false;		
+	}	
+	if (document.form.address.value == '')
+	{
+		alert ("Invalid address.");
+		return false;		
+	}
+	if (document.form.city.value == '')
+	{
+		alert ("Invalid city.");
+		return false;		
+	}
+	if (document.form.state.value == '' || document.form.state.value.length != 2)
+	{
+		alert ("Invalid state.");
+		return false;		
+	}
+	if (document.form.zipcode.value == ''|| document.form.zipcode.value.length != 5)
+	{
+		alert ("Invalid zip code.");
+		return false;		
+	}
+	if (document.form.creditcard.value == '' || document.form.creditcard.value.length != 19)
+	{
+		alert ("Invalid credit card number.");
+		return false;		
+	}
+	if (document.form.cvv.value == '' || document.form.cvv.value.length != 3)
+	{
+		alert ("Invalid CVV.");
+		return false;		
+	}
+	if (document.form.expire.value == '' || document.form.expire.value.length != 4)
+	{
+		alert ("Invalid expiration date.");
+		return false;		
+	}
+	alert ("Your membership order has been made. Thank you for subscribing.");
+	return true;
+}
+</script>
+</header>
+<br/>
+<h1 class = "sectiontitle">Join Dream Fitness Today!</h1> 
+<br/>
+<form name="form" onSubmit="return validation()">
+<table class = "ordertablesize">
+<tr>
+	<td>
+		<span class = "orderinfo">First Name:</span>
+	</td>
+	<td>
+		<input type = "text" name="fname" class = "submittext">
+	</td>
+</tr>
+<tr>
+	<td>
+		<span class = "orderinfo">Last Name:</span>
+	</td>
+	<td>
+		<input type = "text" name="lname" class = "submittext">
+	</td>
+</tr>
+<tr>
+	<td>
+		<span class = "orderinfo">Address:</span> 
+	</td>
+
+	<td>
+		<input type = "text" name="address" class = "submittext"> 
+	</td>
+</tr>
+<tr>	
+	<td>
+		<span class = "orderinfo">City:</span> 
+	</td>
+	<td>
+		<input type = "text" name="city" class = "submittext"> 
+	</td>
+</tr>
+<tr>
+	<td>
+		<span class = "orderinfo">State Postal Code:</span>
+	</td> 
+	<td>
+		<input type = "text" name="state" class = "submittext">
+	</td>
+</tr>
+<tr>
+	<td> 
+		<span class = "orderinfo">Zip Code:</span>
+	</td>
+	<td>
+		<input type = "text" name="zipcode" class = "submittext">	
+	</td>
+</tr>
+<tr>
+	<td> 
+		<span class = "orderinfo">Credit Card Number:</span>
+	</td>
+	<td>
+		<input type = "text" name="creditcard" class = "submittext">	
+	</td>
+</tr>
+<tr>
+	<td> 
+		<span class = "orderinfo">CVV:</span>
+	</td>
+	<td>
+		<input type = "text" name="cvv" class = "submittext">	
+	</td>
+</tr>
+<tr>
+	<td> 
+		<span class = "orderinfo">Expiration Year:</span>
+	</td>
+	<td>
+		<input type = "text" name="expire" class = "submittext">	
+	</td>
+</tr>
+<tr>
+	<td>
+	 	<span class = "orderinfo">Subscription Plan:</span>	
+	</td>
+	<td>
+		<select class = "subscriptionplan">
+  			<option value = "Bronze">Bronze Subscription ($29.99)</option>
+  			<option value = "Silver">Silver Subscription ($59.99)</option>
+  			<option value = "Gold">Gold Subscription ($99.99)</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>
+	</td>
+	<td>
+		<input type = "submit" value = "Submit Order" class = "submitorder">
+	</td>
+</tr>
+
+</table>
+</form>
+<br/>
+<table class = "tablesize">
+	<tr>
+		<th><h1 class = "goldsub">Gold Subscription</h2></th>
+		<th><h1 class = "silversub">Silver Subscription</h2></th>
+		<th><h1 class = "bronzesub">Bronze Subscription</h2></th>
+	</tr>
+	<tr>
+		<td><img src = "Images/goldmembership.png" class = "cardsize"></td>
+		<td><img src = "Images/silvermembership.png" class = "cardsize"></td>
+		<td><img src = "Images/bronzemembership.png" class = "cardsize"></td>
+	</tr>
+	<tr>
+		<th><span class = "subdetail">Price: $99.99 (12 Months)</span></th>
+		<th><span class = "subdetail">Price: $59.99 (6 Months)</span></th>
+		<th><span class = "subdetail">Price: $29.99 (3 Months)</span></th>
+	</tr>
+	<tr>
+		<td class="benefits"><span class = "subdetail"><br>Benefits:
+							<ul>
+								<li>Monthly Gym Magazines</li>
+								<li>VIP Sauna</li>
+								<li>20% Off Your Next Subscription</li>
+								<li>Member Privileges</li>
+								<li>Monthly Raffle Entry</li>
+								<li>Free Costco Coupons</li>
+							</ul>
+		</span></td>
+		<td class="benefits"><span class = "subdetail"><br>Benefits: 
+							<ul>
+								<li>Monthly Gym Magazines</li>
+								<li>10% Off Your Next Subscription</li>
+								<li>Member Privileges</li>
+								<li>Monthly Raffle Entry</li>
+							</ul>
+		</span></td>
+		<td class="benefits"><span class = "subdetail"><br>Benefits: 
+							<ul>
+								<li>5% Off Your Next Subscription</li>
+								<li>Member Privileges</li>
+							</ul>
+		</span></td>
+	</tr>
+</table>
+<br/>
+</body>
+</html>
