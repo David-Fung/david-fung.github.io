@@ -21,7 +21,7 @@ body{margin:0; background-color:#FFFFFF; background-attachment:fixed;}
 img.offerimage{height:400px; width:600px; border-radius:5px;}
 td.benefits{vertical-align:top}
 
-img.cardsize {height:240px; width:336px;}
+img.cardsize {height:240px; width:336px; border-radius:5px;}
 h1.goldsub {font-family:Lucida Sans; color:#E8C560; text-align:center;}
 h1.silversub {font-family:Lucida Sans; color:#A6A6A7; text-align:center;}
 h1.bronzesub {font-family:Lucida Sans; color:#E4BB8D; text-align:center;}
